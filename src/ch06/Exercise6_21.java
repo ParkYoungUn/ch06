@@ -2,20 +2,24 @@ package ch06;
 
 public class Exercise6_21 {
 
+	
 	static int abs(int value) {
 		if (value < 0) {
 			value *= (-1);
 		}
 		return value;
+		
+		//return value >= 0 ? value : -value; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+		
 	}
 	
 	public static void main(String[] args) {
+		
 		int value = 5;
-	
-		System.out.println(value+ "ÀÇ Àý´ë°ª: "+abs(value));
+		
+		System.out.println(value+ "ìµœëŒ€ê°’: "+abs(value));
 		value = -10;
-		System.out.println(value+ "ÀÇ Àý´ë°ª: "+abs(value));
-		int a;
+		System.out.println(value+ "ìµœëŒ€ê°’: "+abs(value));
 	}
 
 }
